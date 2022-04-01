@@ -1,0 +1,35 @@
+{
+  "name": "directus-seeder",
+  "version": "0.1.0",
+  "description": "seeder for directus",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "format": "prettier .  --write",
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "directus",
+    "seed"
+  ],
+  "author": "leo roettele",
+  "license": "GPL-2.0-or-later",
+  "dependencies": {
+    "@directus/sdk": "^9.7.1",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "2.6.1",
+    "typescript": "^4.6.3"
+  }
+}
