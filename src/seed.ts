@@ -1,6 +1,7 @@
 import { FILE_PREFIX, isFile, uploadImage } from "./image-helper";
 import path from "path";
 import { IDirectus, TypeMap } from "@directus/sdk";
+import { Knex } from "knex";
 
 interface SeedOptions {
   clearTableEntries: boolean;
@@ -8,7 +9,7 @@ interface SeedOptions {
 }
 
 export const seed = async (
-  knex: any,
+  knex: Knex,
   directus: IDirectus<TypeMap>,
   tableName: string,
   entries: object[],
