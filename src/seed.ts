@@ -24,7 +24,7 @@ export const seed = async (
       for (const entry of Object.entries(obj)) {
         const key = entry[0];
         const value = entry[1];
-        if (isFile(value)) {
+        if (isFile(value) && directus) {
           // Upload image and replace path with id
           objWithImage = {
             ...objWithImage,
