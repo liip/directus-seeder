@@ -13,10 +13,12 @@ export async function uploadImage(
   const form = new FormData();
 
   form.append("file", fs.createReadStream(imagePath));
-  const response = await directus.transport.post("/files", form, {
-    headers: {
-      ...form.getHeaders(),
+  const response = await directus.files.createOne(form, undefined, {
+    requestOptions: {
+      headers: {
+        ...form.getHeaders(),
+      },
     },
   });
-  return response.data.id;
+  return response?.data?.id;
 }

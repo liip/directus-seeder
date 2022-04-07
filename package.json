@@ -19,17 +19,17 @@
   "author": "leo roettele",
   "license": "GPL-2.0-or-later",
   "dependencies": {
-    "@directus/sdk": "^9.7.1",
-    "form-data": "^4.0.0",
-    "knex": "^1.0.5"
+    "form-data": "^4.0.0"
   },
   "devDependencies": {
+    "@directus/sdk": "^9.8.0",
     "@types/node": "^17.0.23",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "knex": "^1.0.5",
     "prettier": "2.6.1",
     "typescript": "^4.6.3"
   }
