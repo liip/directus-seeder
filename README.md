@@ -75,9 +75,10 @@ By default, the seed file will be created in the `/seeds` directory.
 You can set a different directory in the `knexfile.js` file.
 
 ## Available helper functions
+
 ### `seed()`
 
-The seed function should be called like this:
+The seed function is used to seed data into the database:
 
 ```js
 const { seed } = require('directus-seeder');
