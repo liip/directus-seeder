@@ -19,13 +19,16 @@ exports.FILE_PREFIX = "file:";
 const isFile = (value) => typeof value === "string" && value.startsWith(exports.FILE_PREFIX);
 exports.isFile = isFile;
 function uploadImage(directus, imagePath) {
+    var _a;
     return __awaiter(this, void 0, void 0, function* () {
         const form = new form_data_1.default();
         form.append("file", fs_1.default.createReadStream(imagePath));
-        const response = yield directus.transport.post("/files", form, {
-            headers: Object.assign({}, form.getHeaders()),
+        const response = yield directus.files.createOne(form, undefined, {
+            requestOptions: {
+                headers: Object.assign({}, form.getHeaders()),
+            },
         });
-        return response.data.id;
+        return (_a = response === null || response === void 0 ? void 0 : response.data) === null || _a === void 0 ? void 0 : _a.id;
     });
 }
 exports.uploadImage = uploadImage;

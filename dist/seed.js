@@ -25,7 +25,7 @@ const seed = (knex, directus, tableName, entries, options) => __awaiter(void 0, 
             for (const entry of Object.entries(obj)) {
                 const key = entry[0];
                 const value = entry[1];
-                if ((0, image_helper_1.isFile)(value)) {
+                if ((0, image_helper_1.isFile)(value) && directus) {
                     // Upload image and replace path with id
                     objWithImage = Object.assign(Object.assign({}, objWithImage), { [key]: yield (0, image_helper_1.uploadImage)(directus, path_1.default.join(options.fileRoot || process.cwd(), `/${value.slice(image_helper_1.FILE_PREFIX.length)}`)) });
                 }
