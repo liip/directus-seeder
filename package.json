@@ -1,7 +1,7 @@
 {
   "name": "directus-seeder",
   "version": "0.1.0",
-  "description": "seeder for directus",
+  "description": "Seeder for Directus is a simple package using knexjs and the directus API to seed directus with (dummy) data.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -16,7 +16,12 @@
     "directus",
     "seed"
   ],
-  "author": "leo roettele",
+  "homepage": "https://github.com/liip/directus-seeder",
+  "repository": "git+https://github.com/liip/directus-seeder.git",
+  "bugs": {
+    "url": "https://github.com/liip/directus-seeder/issues"
+  },
+  "author": "Leo Roettele <leo.roettele@liip.ch>",
   "license": "GPL-2.0-or-later",
   "dependencies": {
     "form-data": "^4.0.0"
