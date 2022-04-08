@@ -1,7 +1,7 @@
-import { FILE_PREFIX, isFile, uploadImage } from "./image-helper";
-import path from "path";
-import { IDirectus, TypeMap } from "@directus/sdk";
-import { Knex } from "knex";
+import { FILE_PREFIX, isFile, uploadImage } from './image-helper';
+import path from 'path';
+import { IDirectus, TypeMap } from '@directus/sdk';
+import { Knex } from 'knex';
 
 interface SeedOptions {
   clearTableEntries: boolean;
