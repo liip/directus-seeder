@@ -74,7 +74,7 @@ knex seed:make seed_name
 By default, the seed file will be created in the `/seeds` directory.
 You can set a different directory in the `knexfile.js` file.
 
-## Available helper functions
+## Available helper functions
 
 ### `seed()`
 
