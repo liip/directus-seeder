@@ -1,5 +1,5 @@
-import { IDirectus, TypeMap } from "@directus/sdk";
-import { Knex } from "knex";
+import { IDirectus, TypeMap } from '@directus/sdk';
+import { Knex } from 'knex';
 interface SeedOptions {
     clearTableEntries: boolean;
     fileRoot: string;

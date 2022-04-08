@@ -1,2 +1,2 @@
-export { seed } from "./seed";
-export { uploadImage } from "./image-helper";
+export { seed } from './seed';
+export { uploadImage } from './image-helper';

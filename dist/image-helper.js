@@ -15,14 +15,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.uploadImage = exports.isFile = exports.FILE_PREFIX = void 0;
 const fs_1 = __importDefault(require("fs"));
 const form_data_1 = __importDefault(require("form-data"));
-exports.FILE_PREFIX = "file:";
-const isFile = (value) => typeof value === "string" && value.startsWith(exports.FILE_PREFIX);
+exports.FILE_PREFIX = 'file:';
+const isFile = (value) => typeof value === 'string' && value.startsWith(exports.FILE_PREFIX);
 exports.isFile = isFile;
 function uploadImage(directus, imagePath) {
     var _a;
     return __awaiter(this, void 0, void 0, function* () {
         const form = new form_data_1.default();
-        form.append("file", fs_1.default.createReadStream(imagePath));
+        form.append('file', fs_1.default.createReadStream(imagePath));
         const response = yield directus.files.createOne(form, undefined, {
             requestOptions: {
                 headers: Object.assign({}, form.getHeaders()),
